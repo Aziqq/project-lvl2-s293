@@ -1,6 +1,6 @@
 {
   "name": "gendiff-aziq",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Compares two configuration files and shows a difference.",
   "main": "dist/index.js",
   "scripts": {
@@ -28,6 +28,7 @@
   "homepage": "https://github.com/Aziqq/project-lvl2-s293#readme",
   "dependencies": {
     "commander": "^2.16.0",
+    "ini": "^1.3.5",
     "js-yaml": "^3.12.0",
     "lodash": "^4.17.10"
   },

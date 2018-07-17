@@ -16,4 +16,11 @@ describe('Compare flat files', () => {
     const pathToFile2 = getFilePath('after.yml');
     expect(genDiff(pathToFile1, pathToFile2)).toBe(expected);
   });
+
+  test('ini', () => {
+    const pathToFile1 = getFilePath('before.ini');
+    const pathToFile2 = getFilePath('after.ini');
+
+    expect(genDiff(pathToFile1, pathToFile2)).toBe(expected);
+  });
 });
