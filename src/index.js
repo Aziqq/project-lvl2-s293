@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import parse from './parser';
-import buildAst from './buildAst';
+import buildAst from './builder';
 import render from './render';
 
 export default (firstFilePath, secondFilePath) => {
