@@ -8,4 +8,10 @@ const parsers = {
   '.ini': ini.parse,
 };
 
-export default (fileFormat, data) => parsers[fileFormat](data);
+export default (fileFormat, data) => {
+  const parse = parsers[fileFormat];
+  if (!parse) {
+    throw new Error(`unkown format: ${fileFormat}`);
+  }
+  return parse(data);
+};
