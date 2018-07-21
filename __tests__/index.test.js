@@ -26,6 +26,15 @@ describe('Flat files comparsion', () => {
 
     expect(genDiff(pathToFile1, pathToFile2)).toBe(expected);
   });
+
+  test('plain format', () => {
+    const expectedPlain = fs.readFileSync(getFilePath('expectedPlain.txt'), 'utf8');
+
+    const pathToFile1 = getFilePath('before.json');
+    const pathToFile2 = getFilePath('after.json');
+
+    expect(genDiff(pathToFile1, pathToFile2, 'plain')).toBe(expectedPlain);
+  });
 });
 
 describe('Recursive comparison', () => {

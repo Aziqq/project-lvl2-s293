@@ -2,10 +2,12 @@ import fs from 'fs';
 import path from 'path';
 import parse from './parser';
 import buildAst from './builder';
-import render from './render';
+import render from './renderers';
 
-export default (firstFilePath, secondFilePath) => {
-  const obj1 = parse(path.extname(firstFilePath), fs.readFileSync(firstFilePath, 'utf8'));
-  const obj2 = parse(path.extname(secondFilePath), fs.readFileSync(secondFilePath, 'utf8'));
-  return render(buildAst(obj1, obj2));
+const getParsedFile = pathToFile => parse(path.extname(pathToFile), fs.readFileSync(pathToFile, 'utf8'));
+
+export default (firstFilePath, secondFilePath, format = 'standart') => {
+  const obj1 = getParsedFile(firstFilePath);
+  const obj2 = getParsedFile(secondFilePath);
+  return render(buildAst(obj1, obj2), format);
 };
