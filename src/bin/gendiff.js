@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
-import genDiff from '..';
 import program from 'commander';
+import genDiff from '..';
 import { version, description } from '../../package.json';
 
 program
