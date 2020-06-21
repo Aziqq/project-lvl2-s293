@@ -4,6 +4,10 @@
 [![Issue Count](https://codeclimate.com/github/Aziqq/project-lvl1-s280/badges/issue_count.svg)](https://codeclimate.com/github/Aziqq/project-lvl2-s293/maintainability)
 ![Node CI](https://github.com/Aziqq/project-lvl2-s293/workflows/Node%20CI/badge.svg)
 
+## About
+
+Compares two configuration files and shows a difference.
+
 ## Install
 
 ```sh
