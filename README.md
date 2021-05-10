@@ -13,3 +13,9 @@ Compares two configuration files and shows a difference.
 ```sh
 npm i -g gendiff-aziq
 ```
+
+## Usage
+
+```sh
+gendiff -h
+```
