@@ -37,7 +37,7 @@
     "ini": "^1.3.5",
     "js-yaml": "^3.13.1",
     "lodash": "^4.17.19",
-    "snyk": "^1.346.0"
+    "snyk": "^1.1064.0"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.6",
